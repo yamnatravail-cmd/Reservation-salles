@@ -1,9 +1,12 @@
-/node_modules
-/public/build
+# Dependencies
+/node_modules/
+/vendor/
+
+# Laravel
+/public/build/
 /public/hot
 /public/storage
 /storage/*.key
-/vendor
 .env
 .env.backup
 .env.production
@@ -11,8 +14,84 @@
 Homestead.json
 Homestead.yaml
 auth.json
-npm-debug.log
-yarn-error.log
-/.fleet
-/.idea
-/.vscode
+
+# Node.js logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime files
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Testing and coverage
+coverage/
+.nyc_output/
+*.lcov
+report.*.*.*.*.json
+
+# Build and cache
+build/Release/
+lib-cov/
+.cache/
+.parcel-cache/
+.next/
+out/
+.nuxt/
+dist/
+.output/
+.vuepress/dist/
+.temp/
+.svelte-kit/
+**/.vitepress/dist/
+**/.vitepress/cache/
+.docusaurus/
+.serverless/
+.fusebox/
+.dynamodb/
+.firebase/
+.vite/
+.turbo/
+
+# Package managers
+jspm_packages/
+web_modules/
+bower_components/
+.pnpm-store/
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.yarn-integrity
+.npm/
+
+# TypeScript and lint caches
+*.tsbuildinfo
+.eslintcache
+.stylelintcache
+.node_repl_history
+.grunt/
+.lock-wscript
+.tern-port
+
+# Environment files
+.env.*
+!.env.example
+
+# IDE settings
+/.fleet/
+/.idea/
+/.vscode/
+.vscode-test/
+
+# Other
+*.tgz
+Homestead.yaml
